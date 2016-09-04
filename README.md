@@ -1,6 +1,7 @@
 [![POGODEV](https://github.com/pogodevorg/assets/blob/master/public/img/logo-github.png?raw=true)](https://pogodev.org)
 
-# discord-bot-github [![Build Status](https://img.shields.io/travis/pogodev/discord-bot-github/master.svg)](https://img.shields.io/travis/pogodev/discord-bot-github) [![Coverage Status](https://coveralls.io/repos/github/pogodevorg/discord-bot-github/badge.svg?branch=master)](https://coveralls.io/github/pogodevorg/discord-bot-github?branch=master) [![license](https://img.shields.io/github/license/pogodevorg/discord-bot-github.svg?maxAge=2592000?style=flat-square)](#)
+# discord-bot-github
+[![Build Status](https://travis-ci.org/pogodevorg/discord-bot-github.svg?branch=master)](https://travis-ci.org/pogodevorg/discord-bot-github) [![Code Climate](https://codeclimate.com/github/pogodevorg/discord-bot-github/badges/gpa.svg)](https://codeclimate.com/github/pogodevorg/discord-bot-github) [![Issue Count](https://codeclimate.com/github/pogodevorg/discord-bot-github/badges/issue_count.svg)](https://codeclimate.com/github/pogodevorg/discord-bot-github) [![license](https://img.shields.io/github/license/pogodevorg/discord-bot-github.svg?maxAge=2592000?style=flat-square)](https://github.com/pogodevorg/discord-bot-github/blob/master/LICENSE.md)
 
 ## Table of Contents
 
@@ -23,7 +24,7 @@ You can then relay this information by binding it to a specific channel. We are 
 3. Remember to create a webhook and set the Payload URL to `http://YOURIP:8080/webhook` with `application/json`
 
 ## Documentation
-### Pre-requisites
+### Pre-requisites for Project
 	1. eris
 	2. forky
 	3. github-webhook-handler
@@ -34,8 +35,9 @@ You can then relay this information by binding it to a specific channel. We are 
 Configuration | Description
 ----------------|--------------
 `config.discord.token` | Discord Bot Token. You can find out more [here](https://discordapp.com/developers/docs/topics/oauth2#bots).
-`config.discord.channel_id` | Input the Discord channel ID that you want to bind the bot to.
+`config.discord.channelID` | Input the Discord channel ID that you want to bind the bot to.
 `config.github.token` | Input the GitHub Webhook Secret/Token that you created.
+`config.github.logspath` | Input the absolute path to the folder you wish to save the logs into.
 `config.web.cname` | Don't Touch Me Please. Only if you have to.
 `config.web.url` | Don't Touch Me Please. Only if you have to.
 `config.web.workers` | Don't Touch Me Please. Only if you have to.
@@ -56,7 +58,12 @@ Currently, you can contribute to this project by:
 
 * [![Build Status](https://github.com/fkndean.png?size=36) - fkndean](https://github.com/fkndean)
 
+* [![Build Status](https://github.com/Lisiano256.png?size=36) - Lisiano256](https://github.com/Lisiano256)
+
 ## Credits
     github-webhook-handler
-	eris `NodeJS Discord Wrapper`
-	nandun (Base Code)
+	...GitHub Webhook Library or "middleware" handles all the logic of receiving and verifying webhook requests from GitHub
+    eris
+	...NodeJS Discord Wrapper
+    nandub
+	...Base Code
